@@ -1,0 +1,48 @@
+
+<ion-content padding>
+
+  <ion-toolbar color="primary">
+    <ion-searchbar [(ngModel)]="autocomplete.input" id="search_address" (ionInput)="updateSearchResults()" placeholder="search for a place"></ion-searchbar>
+  </ion-toolbar>
+  <ion-list [hidden]="autocompleteItems.length == 0">
+    <ion-item *ngFor="let item of autocompleteItems" Tappable (click)="selectSearchResult(item)">
+      {{ item.description }}
+    </ion-item>
+  </ion-list>
+
+  <div id="map_canvas">
+    <span class="smallPanel">
+      <button ion-button (click)="DisplayDetails($event)">
+        Details
+      </button>
+    </span>
+    <span class="smallPanel" style="position:absolute;bottom:1em;right:1em;">
+      <button ion-button color="secondary" (click)="UserCheckIn($event)">
+        Check In
+      </button>
+    </span>
+
+  </div>
+</ion-content>
+  <div class="my-overlay" padding [hidden]="overlayHidden" *ngIf="dataDetails.length>0" [ngStyle]="getMyStyles()">
+    <ion-card  text-wrap>
+      <ion-item *ngIf="dataDetails.length>0 && dataDetails[0].type==1">
+        <ion-icon name="logo-usd" item-start large></ion-icon>
+        <h2>{{dataDetails[0].Name}}</h2>
+        <p>is about {{dataDetails[0].Distance.toFixed(2)}} m</p>
+      </ion-item>
+
+      <ion-item *ngIf=" dataDetails.length>1 && dataDetails[1].type==2">
+        <ion-icon name="car" item-start large></ion-icon>
+        <h2>{{dataDetails[1].Name}}</h2>
+        <p>is about {{dataDetails[1].Distance.toFixed(2)}} m</p>
+      </ion-item>
+      <ion-item>
+        <button ion-button icon-start clear item-end (click)="hideOverlay()">
+          <ion-icon name="navigate"></ion-icon>
+          Close
+        </button>
+      </ion-item>
+    </ion-card>
+    </div>
+
