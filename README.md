@@ -11,3 +11,4 @@ This is a demo app of [@ionic-native/google-maps](https://www.npmjs.com/package/
 
 You need to replace `(REPLACE WITH YOUR APK KEY)` in [config.xml](https://github.com/mapsplugin/ionic-googlemaps-quickdemo/blob/master/config.xml#L83-L84) file with your Google Maps API keys.
 "# -" 
+# open_data_food
