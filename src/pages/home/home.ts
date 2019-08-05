@@ -385,7 +385,6 @@ export class HomePage {
       records: data
     };
 
-   // let url = "http://mwteam-001-site29.ftempurl.com/home/checkIn";
     let url = "https://data.gov.sa/Data/en/api/3/action/datastore_upsert";
     this.http.post(url, datastore, options)
       .subscribe(response => {
