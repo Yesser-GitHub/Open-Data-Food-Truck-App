@@ -3,6 +3,7 @@ import { ToastController, LoadingController, AlertController } from 'ionic-angul
 import { Headers, RequestOptions, Http, Response, URLSearchParams } from '@angular/http';
 import {GoogleMaps, GoogleMap, GoogleMapsEvent, Marker,GoogleMapsAnimation,
   MyLocation, Environment,Geocoder,GeocoderResult,Circle, ILatLng,Spherical, HtmlInfoWindow, MarkerCluster} from '@ionic-native/google-maps';
+import { debounce } from 'ionic-angular/umd/util/util';
 
 declare var google;
 
@@ -92,7 +93,7 @@ export class HomePage {
     this.map.clear();
     this.map.getMyLocation()
       .then((location: MyLocation) => {
-        debugger
+
         this.map.animateCamera({
           target: location.latLng,
           zoom: 14,
@@ -217,14 +218,15 @@ export class HomePage {
       this.FormateAtmData();
     }
     else {
-      let urlWeb = 'http://mwteam-001-site29.ftempurl.com/home/getATM';
+      let limit = Number.MAX_SAFE_INTEGER;
+      let Url = "https://data.gov.sa/Data/en/api/3/action/datastore_search?resource_id=7269fc92-72ce-4fcc-a442-4884912f88bb&limit=" + limit;
       let header = new Headers({ 'Content-Type': 'application/json;charset=utf-8' });
       let Roption = new RequestOptions({ 'headers': header });
-      this.http.get(urlWeb, Roption)
+      this.http.get(Url, Roption)
         .subscribe(response => {
 
           let res = response.json();
-          var result = JSON.parse(res).result.records;
+          var result = res.result.records;
           if (result != undefined && result.length > 0) {
             if (result.length > 0) {
               this.ATMSLst = result;
@@ -289,13 +291,15 @@ export class HomePage {
       this.FormateParkData();
     }
     else {
-      let urlWeb = 'http://mwteam-001-site29.ftempurl.com/home/getPARK'
+      let limit = Number.MAX_SAFE_INTEGER;
+      let Url = "https://data.gov.sa/Data/en/api/3/action/datastore_search?resource_id=855e79eb-31b9-443d-9c72-bd1ce3786865&limit=" + limit;
       let header = new Headers({ 'Content-Type': 'application/json;charset=utf-8' });
       let Roption = new RequestOptions({ 'headers': header });
-      this.http.get(urlWeb, Roption)
+      this.http.get(Url, Roption)
         .subscribe(response => {
+          
           let res = response.json();
-          var result = JSON.parse(res).result.records;
+          var result = res.result.records;
           if (result != undefined && result.length > 0) {
             this.ParkLst = result;
             localStorage.setObject('ParkLst', this.ParkLst);
@@ -362,24 +366,30 @@ export class HomePage {
     this.overlayHidden = false;
   }
   UserCheckIn() {
-
     let headers = new Headers(
       {
         'Content-Type': 'application/json',
         "Accept": "application/json",
+        "Authorization":"89fd8337-f201-4f5d-aa36-282008c52ba8"
       });
     let options = new RequestOptions({ headers: headers });
-
-    let data = {
+    let data = [{
       Lat: this.CheckInLocation.lat,
       Lng: this.CheckInLocation.lng,
       CreationTime: new Date()
-    }
-    let url = "http://mwteam-001-site29.ftempurl.com/home/checkIn";
-    //let url = "http://localhost:50834/home/checkIn";
-    this.http.post(url, data, options)
+    }];
+    let datastore = {
+      method: "insert",
+      force: true,
+      resource_id: "d22f5e76-e53c-47b2-ac9c-dc6f3dc82fdc",
+      records: data
+    };
+
+   // let url = "http://mwteam-001-site29.ftempurl.com/home/checkIn";
+    let url = "https://data.gov.sa/Data/en/api/3/action/datastore_upsert";
+    this.http.post(url, datastore, options)
       .subscribe(response => {
-        debugger
+
         let Message = "";
         if (response.status == 200)
           Message = "Ckeck In Successfully";
