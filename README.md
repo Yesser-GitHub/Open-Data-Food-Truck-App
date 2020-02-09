@@ -1,14 +1,18 @@
-# GoogleMaps quick demo
+# Open Data Food Truck Spot App
+This is a very simple application with basic features to show the benefits of the datasets in the "Saudi Open Data Portal" https://data.gov.sa.
+Here are the links of the utilized datasets:
+1. ATMs Locations (https://data.gov.sa/Data/en/dataset/atms-locations)
+2. Parking Locations (https://data.gov.sa/Data/en/dataset/park-locations)
+3. Food truck Checkins (https://data.gov.sa/Data/en/dataset/food)
 
-This is a demo app of [@ionic-native/google-maps](https://www.npmjs.com/package/@ionic-native/google-maps) plugin and [Cordova GoogleMaps](https://github.com/mapsplugin/cordova-plugin-googlemaps) plugin.
+# Aplication Features:
+- User search for Park locations.
+- App Show the available parking cars.
+- App show the nearest ATM Locations.
+- User can checkin and post his car location.
 
-<img src="./capture.png" width="250">
+# Used Technologies:
+- Ionic Cordova.
 
-## Demo apk (Android)
-[ionic-googlemaps-quickdemo.apk](./ionic-googlemaps-quickdemo.apk)
-
-## Replace with your api key
-
-You need to replace `(REPLACE WITH YOUR APK KEY)` in [config.xml](https://github.com/mapsplugin/ionic-googlemaps-quickdemo/blob/master/config.xml#L83-L84) file with your Google Maps API keys.
-"# -" 
-# open_data_food
+# Replace with your api key
+You need to replace `(REPLACE WITH YOUR APK KEY)` in [config.xml](https://github.com/Yesser-GitHub/Open-Data-Food-Truck-App/blob/master/config.xml) file with your Google Maps API keys.
