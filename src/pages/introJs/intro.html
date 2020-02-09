@@ -1,0 +1,69 @@
+
+
+<!--<ion-slides pager="true">
+  <ion-slide>
+    <div>
+
+      <img src='assets/imgs/search1.png' style="height:50%" />
+
+      <p> Search for location </p>
+      <p> you can search for any location</p>
+      <button (click)="skip()"> skip</button>
+    </div>
+  </ion-slide>
+
+
+  <ion-slide>
+    <h1>Slide 2 ffffffffffff</h1>
+    <h1>Slide 2 ffffffffffff</h1>
+    <h1>Slide 2 ffffffffffff</h1>
+    <button (click)="skip()"> skip</button>
+  </ion-slide>
+  <ion-slide>
+    <h1>Slide 3</h1>
+  </ion-slide>
+
+</ion-slides>
+<button> yyyyy</button>-->
+
+<ion-content>
+  <ion-card id="CardDetails" [hidden]="HideDetailsCard">
+    <ion-card-header>
+      <button style="background-color:transparent;float:left" (click)="BackToMainCard()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </button>
+      <p style="display:inline-block"> Details </p>
+    </ion-card-header>
+    <ion-card-content>
+      <div style="text-align: center; width: 60%;margin-left: 10%;">
+        <ion-card style="background-color:#d3d3d363">
+          <div style="width:10%; float:left">
+            <img src="assets/imgs/plackPointer.png" />
+          </div>
+          <div style="width:60%; display:inline-block">
+            {{ DetailsAddress }}
+          </div>
+          <div style="width:20%;display:inline-block ">
+            <button ion-button (click)="ZoomPlace()" style="width:100%;background-color:transparent;padding:0px !important">
+              <img src="assets/imgs/Navigation.png" />
+            </button>
+          </div>
+        </ion-card>
+      </div>
+
+      <div *ngIf="DetailsAddressType=='ATM'" style="text-align: center; width: 60%;margin-left: 10%;">
+        <div style="text-align:center; background-color:#d4f1e2;float:left; margin-top: 6%;margin-bottom: 6%; padding-left: 10%;">
+          <img src="assets/imgs/ATM.png" style="float:left;width:32%;height: 30px;" />
+          <p style="color:#37a76f; display:inline-block;padding-top:10px"> ATM </p>
+        </div>
+      </div>
+      <div *ngIf="DetailsAddressType=='Park'" style="text-align: center; width: 60%;margin-left: 10%;">
+        <div style="text-align:center; background-color:#dcf0f5;float:left; margin-top: 6%;margin-bottom: 6%; padding-left: 10%;">
+          <img src="assets/imgs/Parking.png" style="float:left;width:29%; height: 30px;" />
+          <p style="color:#2e8ea8; display:inline-block;padding-top:10px"> Parking </p>
+        </div>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

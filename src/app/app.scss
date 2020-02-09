@@ -1,5 +1,8 @@
 // http://ionicframework.com/docs/theming/
 
+/*@import '../assets/css/primeicons/primeicons.css';
+@import '../assets/css/primeng/themes/nova-light/theme.css';
+@import '../assets/css/primeng/primeng.min.css';*/
 
 // App Global Sass
 // --------------------------------------------------
@@ -15,14 +18,80 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-#map_canvas, #pano_canvas {
+/*#map_canvas, #pano_canvas {
   height: 100%;
+}*/
+
+/*.ui-dropdown .ui-dropdown-label {
+  padding-left: 2em;
 }
 
+.ui-dropdown .ui-dropdown-trigger {
+  left: 0;
+}*/
+
+/* New Changes 10/12*/
+
+/*div#map_canvas {
+  position: initial !important;
+}*/
+.scroll-content {
+  padding: 0px !important;
+}
+
+.ui-tieredmenu {
+  width: 14.8em !important;
+}
+.scroll-content._gmaps_cdv_{
+  padding:0px !important;
+}
+.ui-tieredmenu.ui-tieredmenu-dynamic {
+  position: fixed !important;
+  display: initial !important;
+}
+
+/* Endddddddddddd*/
+.ui-dropdown {
+  width: 90% !important;
+}
+
+.label.label-md {
+  color: black !important;
+}
+.alert-button.alert-button-md.alert-button-default.alert-button-default-md {
+  width: auto !important;
+}
 .smallPanel {
   margin: 10px;
   padding: 10px;
   background-color:rgba(255,255,255,0.5);
   z-index: 2 !important;
   font-size: 25px;
+}
+
+  ion-icon {
+    font-size: 1.9em;
+  }
+
+.searchbar-input {
+  background-color: #f8f8f8 !important;
+  border-radius: 30px !important;
+  height: 40px !important;
+  // max-width: 400px;
+  font-size: 1.25em !important;
+  border: 1px solid transparent;
+}
+p {
+  font-size: medium
+}
+.toolbar-background-md {
+  background: #fff;
+}
+.ui-button {
+  background-color: lightgray !important;
+  border: 1px solid #d3d3d363 !important;
+}
+ .ui-button.ui-button-icon-only {
+  background-color: lightgray !important;
+  border: 1px solid #d3d3d363 !important;
 }

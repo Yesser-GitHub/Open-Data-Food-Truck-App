@@ -1,0 +1,60 @@
+{
+  "HELLO": "مرحبا",
+  "Search": "بحث",
+  "FoodTruck": "عربات الطعام",
+  "ViewIconLegends": "عرض الايقونات",
+  "AboutUs": "معلومات عنا",
+  "OpenDataPortal": "البوابة الوطنية للبيانات المفتوحة",
+  "Park": "مواقف سيارات",
+  "ATM": "أجهزة الصرافات",
+  "Details": "التفاصيل",
+  "BackTOHome": "العودة للصفحة الرئيسية",
+  "CheckedInSuccessfully": "تمت العمليه بنجاح",
+  "CheckIn": "تأكيد",
+  "ChooseThenearbyCheckin": "اختيار اقرب مكان",
+  "view": "عرض",
+  "RequireMsg": "يجب ادخال قيمة هذا الحقل",
+  "AboutTheApp": " عن التطبيق",
+  "ChooseThePointType": "أختر نوع المكان",
+  "TypeOfInteraction": "نوع التفاعل",
+  "CheckInBtn": "حفظ",
+  "OK": "تم",
+  "PreventADDNewPoint": "لا يمكنك إضافة نقطة جديدة ، حيث توجد نقاط أخرى بالقرب منك",
+  "AboutContent": " <p> هذا هو تطبيق بسيط مع ميزات أساسية للبحث عن مواقف السيارات أو أجهزة الصراف الآلي القريبة في جميع أنحاء المملكة العربية السعودية.</p><br /><p>  علاوة على ذلك ، يتيح التطبيق للمستخدمين العموميين تسجيل الوصول وإضافة موقف سيارات / صراف آلي جديد. </p> <br /><p> لأي طلب ، يرجى التواصل معنا عبر </p>",
+  "AboutSignture": " <p>تم التطوير بواسطة YESSER E-Government Program DATA.GOV.SA جميع الحقوق محفوظة 2019</p>",
+  "Indicates": "تعبر عن ",
+  "providedbyAppusers": "تم اضافتها بواسطة مستخدمي التطبيق",
+  "providedbyOpenData": "تم اضافتها بواسطة البوابة الوطنية للبيانات المفتوحة",
+  "IconLegend": "دلالات الايقونات",
+  "LgendHeader": "<p> مرحبا بك في تطبيق عربات الطعام </p> <p> الايقون علي الخريطة كما هو موضح </p>",
+  "Point": "",
+  "selectTheType": "قم بتحديد النوع",
+  "selectTheNearBy": "قم بتحديد اقرب مكان",
+  "SelectThePointType": "قم بتحديد نوع المكان",
+  "CheckInCount": "عدد التسجيل",
+  "MenuReport": "الإبلاغ عن تسجيل غير صحيح",
+  "InteractionType": {
+    "AllNearBy": "جميع القريب منا",
+    "Parking": "مواقف سيارات",
+    "ATM": "ماكينات الصرافة",
+    "AddNewPoint": "اضافة نقطة جديدة"
+  },
+  "PointType": {
+    "Park": "موقف سيارات",
+    "ATM": "صرافة"
+  },
+  "ChechInTypesParagraph": {
+    "ATMByUser": "صرف آلي مضافة بواسطة مستخدم التطبيق",
+    "Parking": "موقف سيارات",
+    "ATM": " صرافة",
+    "ParkByUser": "موقف سيارات مضافة بواسطة مستخدم التطبيق"
+  },
+  "Messages": {
+    "Required": "يجب ادخال قيمة هذا الحقل",
+    "CkeckInSuccessfully": "تم الحفظ بنجاح",
+    "ErrorWhileCheckIn": "حدث خطأ أثناء الحفظ"
+  }
+
+
+
+}

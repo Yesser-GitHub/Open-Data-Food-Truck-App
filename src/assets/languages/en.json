@@ -1,0 +1,58 @@
+{
+  "HELLO": "Hello",
+  "Search": "Search",
+  "FoodTruck": "Food Truck",
+  "ViewIconLegends": "View Icon Legends",
+  "AboutUs": "About Us",
+  "OpenDataPortal": "Open Data Portal",
+  "Park": "Parking",
+  "ATM": "ATM",
+  "Details": "Details",
+  "BackTOHome": "Back TO Home",
+  "CheckedInSuccessfully": "Checked In Successfully",
+  "CheckIn": "Check In",
+  "ChooseThenearbyCheckin": "Choose The near by Check in",
+  "view": "view",
+  "AboutTheApp": "About The App",
+  "ChooseThePointType": "Choose The Point Type",
+  "TypeOfInteraction": "Type Of Interaction",
+  "CheckInBtn": "Check In",
+  "OK": "OK",
+  "PreventADDNewPoint": "you can't add new point, as there are other points near you",
+  "AboutContent": " <p> This is a simple application with basic features to search for the nearby parkings  or ATMs around the Kingdom of Saudi Arabia.</p><br /><p>  Moreover, the App allows public users to check-in and add new Parking/ATM. </p> <br /><p> For any request, please reach us via </p>",
+  "AboutSignture": " <p>Developed by YESSER E-Government Program DATA.GOV.SA All Rights Reserved 2019 </p>",
+  "Indicates": "Indicates",
+  "providedbyAppusers": "provided by app users",
+  "providedbyOpenData": "provided by open data",
+  "Point": "Point",
+  "IconLegend": "Icon Legend",
+  "LgendHeader": "<p> WelCome to Food Truck app </p> <p> Map icon legends as follow </p>",
+  "selectTheType": "Select The Type",
+  "selectTheNearBy": "Select The Near By",
+  "SelectThePointType": "Select The Point Type",
+  "CheckInCount": "Check-in",
+  "MenuReport": "Report incorrect check-in",
+  "InteractionType": {
+    "AllNearBy": "All Near By",
+    "Parking": "Parking",
+    "ATM": "ATM",
+    "AddNewPoint": "Add New Point"
+  },
+  "PointType": {
+    "Park": "Park",
+    "ATM": "ATM"
+  },
+  "ChechInTypesParagraph": {
+    "ATMByUser": "ATM Added By User",
+    "Parking": "Parking",
+    "ATM": "ATM",
+    "ParkByUser": "Parking Added By User"
+  },
+  "Messages": {
+    "Required": "This Field is Required",
+    "CkeckInSuccessfully": "Ckeck In Successfully",
+    "ErrorWhileCheckIn": "Error While Check In"
+  }
+
+
+}

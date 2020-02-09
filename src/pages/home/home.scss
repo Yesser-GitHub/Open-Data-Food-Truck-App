@@ -1,9 +1,81 @@
+:root {
+  --position: relative;
+}
 page-home {
+
+
   #map_canvas {
-    height: 90%;
+    height: 100%;
+    position: var(--position)
   }
- 
+
+
+  #legendDiv {
+    z-index: 10 !important;
+    position: absolute !important;
+    /*height: 76%;*/
+    margin-top: 15%;
+    border-radius: 6%;
+    width: 87%;
+    margin-right: 2%;
+    margin-left: 6%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 4px #d3d3d3;
+  }
+
+  ion-card#CardDetails{
+    padding:10px !important;
+  }
+
+
+  #legendContent {
+    margin: 4% !important;
+  }
+
   .method-color {
-      color: rgba(136,168,39,1);
+    color: rgba(136,168,39,1);
+  }
+
+  .searchbar-md.searchbar-input {
+    /*padding: 0px 0px 0px 36px*/
+    padding-left: 25px
+  }
+
+  .searchbar-input {
+    font-size: 1.1em !important;
+  }
+
+  .card-content-md {
+    padding: -1px !important;
+  }
+
+
+  .searchbar-md {
+    background: inherit;
+    padding: 0px;
+  }
+
+  ion-card {
+    border-radius: 10px !important;
+  }
+
+  card card-md {
+    border-radius: 10px;
+  }
+
+  .card-md {
+    margin: 0px;
+    width: 100%;
+  }
+
+  card-md p {
+    margin: 0px 0 0px !important;
+  }
+
+  #parkAtmUnderSearch {
+    padding-top: 20px;
+    margin-bottom: -13px;
+    margin-right: -20px;
+    margin-left: -16px;
   }
 }

@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primeicons",
+        "scope": null,
+        "escapedName": "primeicons",
+        "name": "primeicons",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\hp2018\\food_truck"
+    ]
+  ],
+  "_from": "primeicons@latest",
+  "_hasShrinkwrap": false,
+  "_id": "primeicons@2.0.0",
+  "_inCache": true,
+  "_location": "/primeicons",
+  "_nodeVersion": "10.13.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/primeicons_2.0.0_1564055414022_0.2273218178546037"
+  },
+  "_npmUser": {
+    "name": "cagatay.civici",
+    "email": "cagatay.civici@gmail.com"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primeicons",
+    "scope": null,
+    "escapedName": "primeicons",
+    "name": "primeicons",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/primeicons/-/primeicons-2.0.0.tgz",
+  "_shasum": "ec3e5a8d4d04a09309225a5a57deb911e08dc0d3",
+  "_shrinkwrap": null,
+  "_spec": "primeicons",
+  "_where": "C:\\Users\\hp2018\\food_truck",
+  "author": {
+    "name": "PrimeTek"
+  },
+  "bugs": {
+    "url": "https://github.com/primefaces/primeicons/issues"
+  },
+  "dependencies": {},
+  "description": "Font Icon Library for Prime UI Libraries",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-GJTCeMSQU8UU1GqbsaDrg/IH+b/vSinJQl52NVpdJ7sShYLZA8Eq6jLF48Ye3N/dQloGrE07i7XsZvxQ9pNbqg==",
+    "shasum": "ec3e5a8d4d04a09309225a5a57deb911e08dc0d3",
+    "tarball": "https://registry.npmjs.org/primeicons/-/primeicons-2.0.0.tgz",
+    "fileCount": 145,
+    "unpackedSize": 352717,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOZd2CRA9TVsSAnZWagAAg3YP/2mmg7cPRwvSdrlANbSr\nMQn5+FMzMOCY39ad9IuteQQ+Dzt4V5d8VCOL4Yd1yk9jRqRjGNJHlP13FY5/\nkHKy83rH3gntvveM9vs6OtsMXjr40jr195ObvnAXM9ruxWl99gi1ZV9SxBpS\nhu/YwrPR1n7V6Ip8JFOWuNHD8GfN+f50B3vE84BGxggnHHBz5u/0YmytCMOe\npMLw3d4QXNmRRjUF1NZjbBChgVNlo0CLm/nWNYgpaTbZ5wwpQOobFQBLMO+N\n4yxTJzg7XkN3AcCzRXDdc0gHCR1mYWlhBTmThlNH+sj68MZUGPdOAij6EM5+\nUk62zvHo2CDDZNYdaG3cUpLbpns6uMmv4+LeGOseJ89jIZI2I9nML/X/Phh5\nvY6hrBCUj384Q3+3/tkVQcoYfN/s0ipMCpJRyin0unZogzlR5Y2/dMIxwRd6\n3QZt3o1x/gWaFw/tTo/B2w9kDLG+Obgdd/3LMA9ETSATa6W+Al6+FUDl9AP5\nHikAS0F5lrn11H0t4lxKCw91NhA/mafX69qXVJCleUB4UEBoDB2SrJBlYwXf\nTY+6zqPv61dIFCN8ZxjF6yBx7No7S+RqYsVbw7ggkjdghS7tcl8kAE7iBP6k\nS85EDh8RxrIQtegcY81YPWjmcixf4AYkwS2DXKrZz7yIONf0XiqDRd2l439C\n2KGt\r\n=MHfA\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "69dc7c664438845516e4c90ae777229835f74f10",
+  "homepage": "https://github.com/primefaces/primeicons#readme",
+  "keywords": [
+    "Icon"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "cagatay.civici",
+      "email": "cagatay.civici@gmail.com"
+    }
+  ],
+  "name": "primeicons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primefaces/primeicons.git"
+  },
+  "version": "2.0.0"
+}

@@ -2,13 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\assets",
-    "\\src\\assets\\imgs",
-    "\\src\\assets\\js",
     "\\src\\pages",
-    "\\src\\pages\\marker-cluster"
+    "\\src\\pages\\home"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\common.ts",
   "PreviewInSolutionExplorer": false
 }
